@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Jaronie/sdev-305-midterm/issues"
   },
-  "homepage": "https://github.com/Jaronie/sdev-305-midterm#readme"
+  "homepage": "https://github.com/Jaronie/sdev-305-midterm#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

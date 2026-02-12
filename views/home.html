@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Your Dream Vacation</title>
   <!-- import styles -->
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <!-- import JS -->
   <script src="/validation.js" defer></script>
 </head>
@@ -15,11 +15,14 @@
 
   <main>
     <!-- form -->
-    <form>
-      <header>
-        <h1>Book Your Dream Vacation</h1>
-      </header>
-      
+    <form id="pizza-form" action="/confirmation" method="POST">
+      <section class="banner">
+        <header>
+          <h1>Book Your Dream Vacation</h1>
+        </header>
+      </section>
+
+      <div class="form-group">
       <label for destination>Destination</label>
       <select name="destination" id="destination" required>
         <option value="none">Choose a destination...</option>
@@ -33,15 +36,17 @@
         <input type="date" name="date" id="date" required>
         <label for="travelers">Number of Travelers</label>
         <input type="number" name="travelers" id="travelers" value="0" required>
+        </div>
 
-        <button type="submit">Find My Vacation</button>
+        <button type="submit" id="submit-button" action="">Find My Vacation</button>
 
 
     </form>
-    <footer>
-      <p>Format:<a href="https://github.com/Jaronie/sdev-305-midterm">GitHub Repository</a></p>
-    </footer>
-
+    <div class=bottom>
+      <footer>
+        <p>Format:<a href="https://github.com/Jaronie/sdev-305-midterm">GitHub Repository</a></p>
+      </footer>
+    </div>
   </main>
 
 

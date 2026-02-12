@@ -14,12 +14,12 @@ app.use(express.static('public'));
 
 // default route
 app.get('/', (req, res) => {
-    res.sendFile(`${__dirname}/views/home.html`);
+    res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
 // thank you route after form submission
 app.get('/thank-you', (req, res) => {
-    res.sendFile(`${__dirname}/views/confirmation.html`);
+    res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
 });
 
 

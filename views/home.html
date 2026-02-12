@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Dream Vacation</title>
+  <!-- import styles -->
+  <link rel="stylesheet" href="/styles.css">
+  <!-- import JS -->
+  <script src="/validation.js" defer></script>
 </head>
+
 <body>
-    
+
+  <main>
+    <!-- form -->
+    <form>
+      <header>
+        <h1>Book Your Dream Vacation</h1>
+      </header>
+      
+      <label for destination>Destination</label>
+      <select name="destination" id="destination" required>
+        <option value="none">Choose a destination...</option>
+        <option value="indo">Bali, Indonesia</option>
+        <option value="paris">Paris, France</option>
+        <option value="tokyo">Tokyo, Japan</option>
+        <option value="maldives">Maldives</option>
+        <option value="nyc">New York City, USA</option>
+
+        <label for="date">Departure Date</label>
+        <input type="date" name="date" id="date" required>
+        <label for="travelers">Number of Travelers</label>
+        <input type="number" name="travelers" id="travelers" value="0" required>
+
+        <button type="submit">Find My Vacation</button>
+
+
+    </form>
+    <footer>
+      <p>Format:<a href="https://github.com/Jaronie/sdev-305-midterm">GitHub Repository</a></p>
+    </footer>
+
+  </main>
+
+
 </body>
+
 </html>

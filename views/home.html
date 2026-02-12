@@ -8,21 +8,23 @@
   <!-- import styles -->
   <link rel="stylesheet" href="styles/styles.css">
   <!-- import JS -->
-  <script src="/validation.js" defer></script>
+  <script src="js/validation.js" defer></script>
 </head>
 
 <body>
 
   <main>
     <!-- form -->
-    <form id="pizza-form" action="/confirmation" method="POST">
+    <form id="vacation-form" action="/confirmation" method="POST">
       <section class="banner">
         <header>
           <h1>Book Your Dream Vacation</h1>
         </header>
       </section>
 
+    <section class="destination"></section>
       <div class="form-group">
+
       <label for destination>Destination</label>
       <select name="destination" id="destination" required>
         <option value="none">Choose a destination...</option>
@@ -31,24 +33,34 @@
         <option value="tokyo">Tokyo, Japan</option>
         <option value="maldives">Maldives</option>
         <option value="nyc">New York City, USA</option>
+        </select>
+        </div>
+    </section>
 
+    <section class="details">
+        <div>
         <label for="date">Departure Date</label>
         <input type="date" name="date" id="date" required>
+        </div>
+        
+        <div>
         <label for="travelers">Number of Travelers</label>
         <input type="number" name="travelers" id="travelers" value="0" required>
         </div>
-
+</section>
         <button type="submit" id="submit-button" action="">Find My Vacation</button>
 
 
     </form>
+
+
+
+  </main>
     <div class=bottom>
       <footer>
         <p>Format:<a href="https://github.com/Jaronie/sdev-305-midterm">GitHub Repository</a></p>
       </footer>
-    </div>
-  </main>
-
+          </div>
 
 </body>
 
